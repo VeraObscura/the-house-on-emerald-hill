@@ -1,0 +1,43 @@
+.image,
+svg.svg {
+  position: absolute;
+  height: 95vh;
+}
+
+svg.mirrorTableShadow {
+  g {
+    g {
+      path {
+        fill: #540c37;
+      }
+    }
+  }
+}
+
+svg.mirrorTableMirror {
+  polygon {
+    fill: #e5f3ed;
+  }
+}
+
+svg.mirrorTableBase {
+  g {
+    g {
+      path {
+        fill: #be765e;
+      }
+    }
+  }
+}
+
+.mirrorTableGhost {
+}
+
+.mirrorTableReflections {
+}
+
+.mirrorTableGlare {
+}
+
+.mirrorTableDetails {
+}

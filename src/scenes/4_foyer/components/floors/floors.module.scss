@@ -1,0 +1,19 @@
+.image,
+svg.svg {
+  position: absolute;
+  height: 95vh;
+}
+
+svg.floorBase {
+  g {
+    polygon {
+      fill: #e5f3ed;
+    }
+  }
+}
+
+.floorTiles {
+}
+
+.floorShadow {
+}

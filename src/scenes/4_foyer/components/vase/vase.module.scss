@@ -1,0 +1,33 @@
+.image,
+.svg.svg {
+  position: absolute;
+  height: 95vh;
+  cursor: pointer;
+}
+
+svg.vaseBase {
+  path {
+    fill: #74a06a;
+  }
+}
+
+svg.vaseFlowersShadow {
+  ellipse {
+    fill: #982e6c;
+  }
+}
+
+svg.vaseFlowersLight {
+  path {
+    fill: #b86d9c;
+  }
+  ellipse {
+    fill: #b86d9c;
+  }
+}
+
+.vaseFlowersStems {
+}
+
+.vaseDetails {
+}

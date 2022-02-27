@@ -1,0 +1,23 @@
+.image,
+svg.svg {
+  position: absolute;
+  height: 95vh;
+}
+
+svg.chandelierLights {
+  g {
+    g {
+      path {
+        fill: #e5f3ed;
+      }
+    }
+  }
+}
+
+svg.chandelierBase {
+  g {
+    path {
+      fill: #e5db8b;
+    }
+  }
+}

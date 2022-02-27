@@ -1,0 +1,17 @@
+.image,
+svg.svg {
+  position: absolute;
+  height: 95vh;
+}
+
+svg.walls {
+  polygon {
+    fill: #67224b;
+  }
+}
+
+svg.wallEdge {
+  polygon {
+    fill: #bf8864;
+  }
+}

@@ -1,0 +1,21 @@
+.image,
+svg.svg {
+  position: absolute;
+  height: 95vh;
+}
+
+svg.crownMouldingBase {
+  polygon {
+    fill: #bf8864;
+  }
+}
+
+svg.ceilingBase {
+  polygon {
+    fill: #9a6e50;
+  }
+}
+
+.ceilingShadow {
+  //filter: hue-rotate(25deg);
+}

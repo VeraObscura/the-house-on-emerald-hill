@@ -1,0 +1,20 @@
+.image,
+svg.svg {
+  position: absolute;
+  height: 95vh;
+}
+
+svg.baseboardsBase {
+  g {
+    path {
+      fill: #7a9d6a;
+    }
+    polygon {
+      fill: #7a9d6a;
+    }
+  }
+}
+
+.baseboardDetails {
+  //filter: hue-rotate(-180deg);
+}

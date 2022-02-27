@@ -1,0 +1,15 @@
+.image,
+svg.svg {
+  position: absolute;
+  height: 95vh;
+}
+
+svg.banisterBase {
+  path {
+    fill: #7a9d6a;
+  }
+}
+
+.banisterDetails {
+  //filter: hue-rotate(-180deg);
+}

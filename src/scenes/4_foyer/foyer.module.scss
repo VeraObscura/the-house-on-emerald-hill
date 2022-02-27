@@ -1,111 +1,21 @@
-.foyer {
-  height: 100vh;
+.foyerContainer {
+  color: white;
+  background-color: #200212;
 
-  .imageContainer {
-    position: relative;
-    display: inline;
+  .foyer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.5em 2em;
+    height: 100vh;
+    filter: saturate(70%) contrast(1.1);
 
-    .image,
-    svg.svg {
-      position: absolute;
+    .imageContainer {
+      width: auto;
       height: 95vh;
-    }
-
-    // svg.floorBase {
-    //   g {
-    //     polygon {
-    //       fill: #e5f3ed;
-    //     }
-    //   }
-    // }
-
-    svg.walls {
-      polygon {
-        fill: #682348;
-      }
-    }
-
-    svg.wallEdge {
-      polygon {
-        fill: #bf8864;
-      }
-    }
-
-    svg.doorBase {
-      path {
-        fill: #74a06a;
-        //fill: slateblue;
-      }
-    }
-
-    .doorDetails {
-      //filter: hue-rotate(-180deg);
-    }
-
-    svg.chandelierLights {
-      g {
-        g {
-          path {
-            fill: #e5f3ed;
-          }
-        }
-      }
-    }
-
-    svg.chandelierBase {
-      g {
-        path {
-          fill: #e5db8b;
-        }
-      }
-    }
-
-    svg.mirrorTableShadow {
-      g {
-        g {
-          path {
-            fill: #540c37;
-          }
-        }
-      }
-    }
-
-    svg.mirrorTableMirror {
-      polygon {
-        fill: #e5f3ed;
-      }
-    }
-
-    svg.mirrorTableBase {
-      g {
-        g {
-          path {
-            fill: #be765e;
-          }
-        }
-      }
-    }
-
-    svg.vaseBase {
-      path {
-        fill: #74a06a;
-      }
-    }
-
-    svg.crownMouldingBase {
-      polygon {
-        fill: #bf8864;
-      }
-    }
-
-    svg.ceilingBase {
-      polygon {
-        fill: #9a6e50;
-      }
-    }
-
-    .ceilingShadow {
-      //filter: hue-rotate(25deg);
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      justify-content: center;
     }
   }
 }

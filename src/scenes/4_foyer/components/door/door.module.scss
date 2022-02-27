@@ -1,0 +1,15 @@
+.image,
+svg.svg {
+  position: absolute;
+  height: 95vh;
+}
+
+svg.doorBase {
+  path {
+    fill: #7a9d6a;
+  }
+}
+
+.doorDetails {
+  //filter: hue-rotate(-180deg);
+}
