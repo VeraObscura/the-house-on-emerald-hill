@@ -1,0 +1,11 @@
+.tile {
+  width: min-content;
+  font-size: 2em;
+  padding: 0.2em 1em;
+  background-color: antiquewhite;
+  color: brown;
+
+  &:hover {
+    cursor: url(../../assets/cursor.png), auto;
+  }
+}
