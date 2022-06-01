@@ -1,10 +1,10 @@
 import { Fragment } from "react";
 
-import { ReactComponent as CeilingBase } from "assets/ceiling_base.svg";
-import { ReactComponent as CrownMouldingBase } from "assets/crown_moulding_base.svg";
-import ceilingDetails from "assets/ceiling_details.png";
-import ceilingShadow from "assets/ceiling_shadow.png";
-import crownMouldingShadow from "assets/crown_moulding_shadow.png";
+import { ReactComponent as CeilingBase } from "assets/foyer/ceiling_base.svg";
+import { ReactComponent as CrownMouldingBase } from "assets/foyer/crown_moulding_base.svg";
+import ceilingDetails from "assets/foyer/ceiling_details.png";
+import ceilingShadow from "assets/foyer/ceiling_shadow.png";
+import crownMouldingShadow from "assets/foyer/crown_moulding_shadow.png";
 
 import styles from "./ceiling.module.scss";
 

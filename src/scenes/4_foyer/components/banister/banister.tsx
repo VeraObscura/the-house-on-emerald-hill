@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 
-import { ReactComponent as BanisterBase } from "assets/banister_base.svg";
-import banisterDetails from "assets/banister_details.png";
+import { ReactComponent as BanisterBase } from "assets/foyer/banister_base.svg";
+import banisterDetails from "assets/foyer/banister_details.png";
 
 import styles from "./banister.module.scss";
 

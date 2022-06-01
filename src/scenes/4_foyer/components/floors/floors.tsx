@@ -1,8 +1,8 @@
 import { Fragment } from "react";
 
-import { ReactComponent as FloorBase } from "assets/floor_base.svg";
-import floorTiles from "assets/floor_tiles.png";
-import floorShadow from "assets/floor_shadow.png";
+import { ReactComponent as FloorBase } from "assets/foyer/floor_base.svg";
+import floorTiles from "assets/foyer/floor_tiles.png";
+import floorShadow from "assets/foyer/floor_shadow.png";
 
 import styles from "./floors.module.scss";
 

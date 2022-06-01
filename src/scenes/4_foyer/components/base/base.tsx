@@ -1,4 +1,4 @@
-import base from "assets/base.png";
+import base from "assets/foyer/base-horizontal.png";
 
 import styles from "./base.module.scss";
 

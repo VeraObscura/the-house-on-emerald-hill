@@ -1,9 +1,9 @@
 import { Fragment } from "react";
 
-import { ReactComponent as FoyerWalls } from "assets/walls.svg";
-import { ReactComponent as FoyerWallEdge } from "assets/wall_edge.svg";
-import wallsShadow from "assets/walls_shadow.png";
-import peacockWallpaper from "assets/peacock_wallpaper.png";
+import { ReactComponent as FoyerWalls } from "assets/foyer/walls.svg";
+import { ReactComponent as FoyerWallEdge } from "assets/foyer/wall_edge.svg";
+import wallsShadow from "assets/foyer/walls_shadow.png";
+import peacockWallpaper from "assets/foyer/peacock_wallpaper.png";
 
 import styles from "./walls.module.scss";
 

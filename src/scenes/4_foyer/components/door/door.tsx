@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 
-import { ReactComponent as DoorBase } from "assets/door_base.svg";
-import doorDetails from "assets/door_details.png";
+import { ReactComponent as DoorBase } from "assets/foyer/door_base.svg";
+import doorDetails from "assets/foyer/door_details.png";
 
 import styles from "./door.module.scss";
 

@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 
-import { ReactComponent as BaseboardsBase } from "assets/baseboards_base.svg";
-import baseboardsDetails from "assets/baseboards_details.png";
+import { ReactComponent as BaseboardsBase } from "assets/foyer/baseboards_base.svg";
+import baseboardsDetails from "assets/foyer/baseboards_details.png";
 
 import styles from "./baseboards.module.scss";
 

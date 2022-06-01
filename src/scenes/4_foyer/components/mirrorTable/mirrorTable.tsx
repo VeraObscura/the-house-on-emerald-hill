@@ -1,12 +1,12 @@
 import { Fragment } from "react";
 
-import { ReactComponent as MirrorTableShadow } from "assets/mirrortable_shadow.svg";
-import { ReactComponent as MirrorTableMirror } from "assets/mirrortable_mirror.svg";
-import { ReactComponent as MirrorTableBase } from "assets/mirrortable_base.svg";
-import mirrorTableDetails from "assets/mirrortable_details.png";
-import mirrorTableGhost from "assets/mirrortable_ghost.png";
-import mirrorTableGlare from "assets/mirrortable_mirrorglare.png";
-import mirrortableReflections from "assets/mirrortable_reflections.png";
+import { ReactComponent as MirrorTableShadow } from "assets/foyer/mirrortable_shadow.svg";
+import { ReactComponent as MirrorTableMirror } from "assets/foyer/mirrortable_mirror.svg";
+import { ReactComponent as MirrorTableBase } from "assets/foyer/mirrortable_base.svg";
+import mirrorTableDetails from "assets/foyer/mirrortable_details.png";
+import mirrorTableGhost from "assets/foyer/mirrortable_ghost.png";
+import mirrorTableGlare from "assets/foyer/mirrortable_mirrorglare.png";
+import mirrortableReflections from "assets/foyer/mirrortable_reflections.png";
 
 import styles from "./mirrorTable.module.scss";
 
