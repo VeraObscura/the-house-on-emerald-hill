@@ -17,8 +17,20 @@ const Foyer = () => {
   return (
     <div className={styles.foyerContainer}>
       <section className={styles.foyer}>
-        <div className={styles.imageContainer}>
+        <div className={styles.baseContainer}>
           <Base />
+        </div>
+        <div className={styles.textContainer}>
+          <p className={styles.date}>{strings.DATE}</p>
+          <p>{strings.PARA_1}</p>
+          <p>{strings.PARA_2}</p>
+          <p>{strings.PARA_3}</p>
+          <p>{strings.PARA_4}</p>
+          <p>{strings.PARA_5}</p>
+          <p>{strings.PARA_6}</p>
+          <p>{strings.PARA_7}</p>
+        </div>
+        <div className={styles.imageContainer}>
           <Floors />
           <Walls />
           <Ceiling />
@@ -29,16 +41,6 @@ const Foyer = () => {
           <Vase />
           <Banister />
         </div>
-
-        {/* 
-            <p>{strings.DATE}</p>
-            <p>{strings.PARA_1}</p>
-            <p>{strings.PARA_2}</p>
-            <p>{strings.PARA_3}</p>
-            <p>{strings.PARA_4}</p>
-            <p>{strings.PARA_5}</p>
-            <p>{strings.PARA_6}</p>
-            <p>{strings.PARA_7}</p> */}
       </section>
     </div>
   );
