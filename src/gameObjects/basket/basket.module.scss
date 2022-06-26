@@ -1,0 +1,25 @@
+.basket {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  border: 1px dashed transparent;
+  margin: 0 0 -0.6em 0.3em;
+  overflow: hidden;
+  padding: 0;
+
+  .text {
+    margin-top: -14px;
+    color: red;
+  }
+}
+
+.basket__empty {
+  width: 2em;
+  height: 1.5em;
+  padding: 0 0.25em 0;
+  margin: 0 0.1em -0.6em 0.2em;
+  border: 1px dashed white;
+}

@@ -1,11 +1,37 @@
+@import "styles/mixins";
+
 .tile {
-  width: min-content;
-  font-size: 2em;
-  padding: 0.2em 1em;
-  background-color: antiquewhite;
-  color: brown;
+  @include animation("fade-in 1s");
+  height: fit-content;
+  padding: 0 0.25em 0;
+  margin: 0 0.2em -0.6em 0.2em;
+  bottom: 0;
+  font-size: 40px;
 
   &:hover {
     cursor: url(../../assets/cursor.png), auto;
   }
+
+  span {
+    line-height: 0px;
+  }
+}
+
+.tile__dragging {
+  color: white;
+  background-color: transparent;
+}
+
+.tile__block {
+  background-color: antiquewhite;
+  color: brown;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.tile__plain {
+  padding: 0;
+  color: white;
+  background-color: transparent;
+  user-select: none;
 }

@@ -1,0 +1,19 @@
+@import "styles/mixins";
+
+.textBlock {
+  @include animation("fade-in 1s");
+
+  display: inline-block;
+
+  span {
+    display: inline-block;
+  }
+}
+
+.textBlock__complete {
+  @include animation("fade-out 1s forwards");
+}
+
+.textBlock__date {
+  line-height: 0px;
+}
