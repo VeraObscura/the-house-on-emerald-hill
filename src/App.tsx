@@ -1,3 +1,6 @@
+import { DndProvider } from "react-dnd";
+import { HTML5Backend } from "react-dnd-html5-backend";
+
 // import Opening from "./scenes/0_opening";
 // import FirstBedroom from "./scenes/10_firstBedroom";
 // import SecondBedroom from "./scenes/11_secondBedroom";
@@ -20,12 +23,13 @@ import "./App.scss";
 const App = () => {
   return (
     <div className="app">
-      {/* <Opening />
+      <DndProvider backend={HTML5Backend}>
+        {/* <Opening />
             <Facade />
             <FiveFootWay />
             <Skywell /> */}
-      <Foyer />
-      {/* <DiningRoom />
+        <Foyer />
+        {/* <DiningRoom />
             <FamilyRoom />
             <Stairs />
             <Kitchen />
@@ -36,6 +40,7 @@ const App = () => {
             <MasterBedroom />
             <Attic />
             <ThirdBedroom /> */}
+      </DndProvider>
     </div>
   );
 };
