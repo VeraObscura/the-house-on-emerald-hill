@@ -1,0 +1,35 @@
+/* Fade In*/
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  -moz-animation: #{$str}; /* Firefox < 16 */
+  -o-animation: #{$str}; /* Opera < 12.1 */
+  -webkit-animation: #{$str}; /* Safari, Chrome and Opera > 12.1 */
+  animation: #{$str};
+}
+
+@include keyframes(fade-in) {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@include keyframes(fade-out) {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
