@@ -3,7 +3,7 @@ import type { PayloadAction } from "@reduxjs/toolkit";
 
 import type { RootState } from "../store";
 
-import { BasketType } from "types/baskets";
+import { BasketType } from "types/basket";
 
 interface BasketInput {
   index: number;
