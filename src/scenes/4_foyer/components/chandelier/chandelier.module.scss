@@ -3,9 +3,11 @@ svg.svg {
   position: absolute;
   height: auto;
   width: 100%;
+  pointer-events: none;
 }
 
 svg.chandelierLights {
+  pointer-events: none;
   g {
     g {
       path {
@@ -18,7 +20,13 @@ svg.chandelierLights {
 svg.chandelierBase {
   g {
     path {
+      pointer-events: all;
+      cursor: pointer;
       fill: #e5db8b;
+
+      &:hover {
+        fill: red;
+      }
     }
   }
 }

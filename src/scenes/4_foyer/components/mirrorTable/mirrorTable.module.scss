@@ -3,6 +3,7 @@ svg.svg {
   position: absolute;
   height: auto;
   width: 100%;
+  pointer-events: none;
 }
 
 svg.mirrorTableShadow {
@@ -25,7 +26,13 @@ svg.mirrorTableBase {
   g {
     g {
       path {
+        pointer-events: all;
+        cursor: pointer;
         fill: #be765e;
+
+        &:hover {
+          fill: red;
+        }
       }
     }
   }

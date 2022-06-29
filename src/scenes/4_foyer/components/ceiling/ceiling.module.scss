@@ -3,17 +3,30 @@ svg.svg {
   position: absolute;
   height: auto;
   width: 100%;
+  pointer-events: none;
 }
 
 svg.crownMouldingBase {
   polygon {
+    pointer-events: all;
+    cursor: pointer;
     fill: #bf8864;
+
+    &:hover {
+      fill: red;
+    }
   }
 }
 
 svg.ceilingBase {
   polygon {
+    pointer-events: all;
+    cursor: pointer;
     fill: #9a6e50;
+
+    &:hover {
+      fill: red;
+    }
   }
 }
 

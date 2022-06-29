@@ -3,12 +3,18 @@
   position: absolute;
   height: auto;
   width: 100%;
-  cursor: pointer;
+  pointer-events: none;
 }
 
-svg.vaseBase {
+.vaseBase {
   path {
+    pointer-events: all;
+    cursor: pointer;
     fill: #74a06a;
+
+    &:hover {
+      fill: red;
+    }
   }
 }
 
@@ -28,7 +34,9 @@ svg.vaseFlowersLight {
 }
 
 .vaseFlowersStems {
+  pointer-events: none;
 }
 
 .vaseDetails {
+  pointer-events: none;
 }

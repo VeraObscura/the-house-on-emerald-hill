@@ -3,11 +3,18 @@ svg.svg {
   position: absolute;
   height: auto;
   width: 100%;
+  pointer-events: none;
 }
 
 svg.banisterBase {
   path {
-    fill: #7a9d6a;
+    pointer-events: all;
+    cursor: pointer;
+    fill: #74a06a;
+
+    &:hover {
+      fill: red;
+    }
   }
 }
 

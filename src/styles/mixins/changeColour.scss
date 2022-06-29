@@ -1,0 +1,14 @@
+/* Change Colour */
+
+@mixin animation($colour1, $colour2) {
+  animation: changeColour 0.5s;
+
+  @keyframes changeColour {
+    from {
+      background-color: $colour1;
+    }
+    to {
+      background-color: $colour2;
+    }
+  }
+}
