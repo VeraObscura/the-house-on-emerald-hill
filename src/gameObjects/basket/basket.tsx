@@ -23,11 +23,11 @@ const Basket = ({ allowedWords, location, paragraph, index }: BasketProps) => {
   const tiles = useAppSelector((state: RootState) => state.inventory.tiles);
 
   const [basket, setBasket] = useState<WordType | null>(null);
-  const [{ isOver }, dropRef] = useDrop({
+  const [{ isOverCurrent }, dropRef] = useDrop({
     accept: "tile",
     drop: (tile: WordType) => dropTile(tile),
     collect: (monitor) => ({
-      isOver: monitor.isOver(),
+      isOverCurrent: monitor.isOver({ shallow: true }),
     }),
   });
 
@@ -62,15 +62,15 @@ const Basket = ({ allowedWords, location, paragraph, index }: BasketProps) => {
     }
   };
 
+  const isEmpty = !basket ? styles.basket__empty : "";
+  const isHovering = isOverCurrent ? styles.basket__hovering : "";
+
   return (
     <span
-      className={
-        basket ? styles.basket : `${styles.basket} ${styles.basket__empty}`
-      }
+      className={`${styles.basket} ${isEmpty} ${isHovering} `}
       ref={dropRef}
     >
-      {basket && <div className={styles.text}>{basket.word}</div>}
-      {isOver && <div></div>}
+      {basket && <span className={styles.basket__text}>{basket.word}</span>}
     </span>
   );
 };
