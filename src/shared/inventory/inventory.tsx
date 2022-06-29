@@ -3,10 +3,10 @@ import { useAppSelector } from "redux/hooks";
 import { useDrop } from "react-dnd";
 
 import { RootState } from "redux/store";
-import { setInventory } from "redux/slices/inventorySlice";
+import { addTile } from "redux/slices/inventorySlice";
 
 import Tile from "gameObjects/tile";
-import { WordType } from "types/word";
+import { TileType } from "types/tile";
 
 import styles from "./inventory.module.scss";
 
@@ -16,35 +16,13 @@ const Inventory = () => {
 
   const [{ isOver }, dropRef] = useDrop({
     accept: "tile",
-    drop: (tile: WordType) => dropTile(tile),
+    drop: (tile: TileType) => dispatch(addTile(tile)),
     collect: (monitor) => ({
       isOver: monitor.isOver(),
     }),
   });
 
-  const dropTile = (tile: WordType) => {
-    const inventoryTiles = [...tiles];
-
-    const currentWords = inventoryTiles.map((tile) => {
-      return tile.word;
-    });
-
-    if (!currentWords.includes(tile.word)) {
-      inventoryTiles.push({
-        id: tile?.id,
-        word: tile.word,
-        alignment: tile.alignment,
-      }); // Appends current tile to tiles array
-
-      // Sort tiles by id
-      inventoryTiles.sort(function (a, b) {
-        return a.id - b.id;
-      });
-
-      // update inventory
-      dispatch(setInventory(inventoryTiles));
-    }
-  };
+  console.log(tiles);
 
   return (
     <div className={styles.inventoryContainer} ref={dropRef}>
@@ -54,6 +32,7 @@ const Inventory = () => {
           id={tile.id}
           word={tile.word}
           alignment={tile.alignment}
+          customStyle={tile.customStyle}
         />
       ))}
     </div>

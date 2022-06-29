@@ -1,4 +1,4 @@
-import { WordType } from "types/word";
+import { TileType } from "types/tile";
 import { BasketType } from "types/basket";
 import Basket from "gameObjects/basket";
 import Tile from "gameObjects/tile";
@@ -24,7 +24,7 @@ export const mapBaskets = (
   return mapped;
 };
 
-export const mapTiles = (inventory: WordType[], tiles: WordType[]) => {
+export const mapTiles = (inventory: TileType[], tiles: TileType[]) => {
   const tileIds = inventory.map((tile) => {
     return tile.id;
   });
@@ -57,4 +57,14 @@ export const checkTextBlockComplete = (baskets: JSX.Element[]) => {
 
 export const getRandomInt = (max: number) => {
   return Math.floor(Math.random() * max);
+};
+
+export const getCustomStyle = () => {
+  const random = getRandomInt(40) - getRandomInt(20);
+  const m = getRandomInt(2) / 10;
+  const randomMargin = `${getRandomInt(1) - getRandomInt(2)}em ${
+    0 - getRandomInt(1)
+  }em ${m}em ${m - m}em`;
+
+  return { transform: `rotate(${random}deg)`, margin: randomMargin };
 };

@@ -3,24 +3,30 @@ import { createSlice } from "@reduxjs/toolkit";
 
 import type { RootState } from "../store";
 
-import { WordType } from "types/word";
+import { TileType } from "types/tile";
 
 interface TileState {
   foyer: {
-    para1: WordType[];
-    para2: WordType[];
-    para3: WordType[];
-    para4: WordType[];
-    para5: WordType[];
-    para6: WordType[];
-    para7: WordType[];
+    para1: TileType[];
+    para2: TileType[];
+    para3: TileType[];
+    para4: TileType[];
+    para5: TileType[];
+    para6: TileType[];
+    para7: TileType[];
   };
 }
 
 const initialState: TileState = {
   foyer: {
     para1: [],
-    para2: [{ id: 3, word: "miss", alignment: 1 }],
+    para2: [
+      {
+        id: 3,
+        word: "miss",
+        alignment: 1,
+      },
+    ],
     para3: [],
     para4: [],
     para5: [],

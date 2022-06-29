@@ -8,7 +8,7 @@ import { fillBasket } from "redux/slices/basketSlice";
 import { setInventory } from "redux/slices/inventorySlice";
 
 import { BasketType } from "types/basket";
-import { WordType } from "types/word";
+import { TileType } from "types/tile";
 
 import styles from "./basket.module.scss";
 
@@ -22,16 +22,16 @@ const Basket = ({ allowedWords, location, paragraph, index }: BasketProps) => {
   const dispatch = useDispatch();
   const tiles = useAppSelector((state: RootState) => state.inventory.tiles);
 
-  const [basket, setBasket] = useState<WordType | null>(null);
+  const [basket, setBasket] = useState<TileType | null>(null);
   const [{ isOverCurrent }, dropRef] = useDrop({
     accept: "tile",
-    drop: (tile: WordType) => dropTile(tile),
+    drop: (tile: TileType) => dropTile(tile),
     collect: (monitor) => ({
       isOverCurrent: monitor.isOver({ shallow: true }),
     }),
   });
 
-  const dropTile = (tile: WordType) => {
+  const dropTile = (tile: TileType) => {
     const inventoryTiles = [...tiles];
 
     if (allowedWords.includes(tile.word)) {

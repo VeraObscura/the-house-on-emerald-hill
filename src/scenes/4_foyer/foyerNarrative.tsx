@@ -1,13 +1,13 @@
 import { useAppSelector } from "redux/hooks";
 
-import { WordType } from "types/word";
+import { TileType } from "types/tile";
 import { BasketType } from "types/basket";
 import { mapBaskets, mapTiles, checkTextBlockComplete } from "helpers/helpers";
 
 import TextBlock from "gameObjects/textBlock";
 
 interface NarrativeProps {
-  tiles: WordType[];
+  tiles: TileType[];
   baskets: BasketType[];
 }
 

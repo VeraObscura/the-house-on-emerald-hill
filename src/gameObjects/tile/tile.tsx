@@ -1,21 +1,16 @@
 import { useDrag } from "react-dnd";
 
-import { WordType } from "types/word";
-import { getRandomInt } from "helpers/helpers";
+import { TileType } from "types/tile";
 import styles from "./tile.module.scss";
-
-interface TileProps extends WordType {
-  isTextTile?: boolean;
-  showText?: boolean;
-}
 
 const Tile = ({
   id,
   word,
   alignment,
+  customStyle,
   isTextTile = false,
   showText = false,
-}: TileProps) => {
+}: TileType) => {
   const [{ isDragging }, dragRef] = useDrag({
     type: "tile",
     item: { id, word, alignment },
@@ -23,11 +18,6 @@ const Tile = ({
       isDragging: monitor.isDragging(),
     }),
   });
-  const random = getRandomInt(40) - getRandomInt(20);
-  const m = getRandomInt(2) / 10;
-  const randomMargin = `${getRandomInt(1) - getRandomInt(2)}em ${
-    0 - getRandomInt(1)
-  }em ${m}em ${m - m}em`;
 
   const isTileDragging = isDragging ? styles.tile__dragging : "";
   const displayText = showText ? styles.tile__plain : styles.tile__block;
@@ -36,11 +26,7 @@ const Tile = ({
     <span
       className={`${styles.tile} ${isTileDragging} ${displayText}`}
       ref={dragRef}
-      style={
-        !isDragging && !isTextTile
-          ? { transform: `rotate(${random}deg)`, margin: randomMargin }
-          : {}
-      }
+      style={customStyle}
     >
       {word}
     </span>
